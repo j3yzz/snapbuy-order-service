@@ -43,7 +43,6 @@ func (c *orderServiceClient) CreateOrder(ctx context.Context, in *CreateOrderReq
 // for forward compatibility
 type OrderServiceServer interface {
 	CreateOrder(context.Context, *CreateOrderRequest) (*CreateOrderResponse, error)
-	mustEmbedUnimplementedOrderServiceServer()
 }
 
 // UnimplementedOrderServiceServer must be embedded to have forward compatible implementations.
